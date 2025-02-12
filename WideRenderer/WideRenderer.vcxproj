@@ -130,14 +130,15 @@
   <ItemGroup>
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Transform.cpp" />
-    <ClCompile Include="VertexShader.cpp" />
+    <ClCompile Include="Shader.cpp" />
     <ClCompile Include="WideRenderer.cpp" />
     <ClCompile Include="WideSwapChain.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h" />
+    <ClInclude Include="PrimtiveTopology.h" />
     <ClInclude Include="Transform.h" />
-    <ClInclude Include="VertexShader.h" />
+    <ClInclude Include="Shader.h" />
     <ClInclude Include="WideRenderer.h" />
     <ClInclude Include="WideSwapChain.h" />
   </ItemGroup>

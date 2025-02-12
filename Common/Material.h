@@ -1,14 +1,20 @@
 ﻿#pragma once
 #include <string>
 
+
 namespace common
 {
 	class Material
 	{
 	public:
-		Material(std::wstring shaderName);
+		Material();
+		void SetVertexShader(int n);
+		void SetPixelShader(int n);
+		int GetVertexShaderIndex();
+		int GetPixelShaderIndex();
 
 	private:
-		std::wstring shaderName_;
+		int vertexShaderIndex_;
+		int pixelShaderIndex_;
 	};
 }

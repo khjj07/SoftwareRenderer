@@ -1,5 +1,7 @@
 #pragma once
 #include <windows.h>
+
+#include "PrimtiveTopology.h"
 #include "../Common/IRenderer.h"
 #include "../Common/Define.h"
 #include "../Math/Matrix4x4.h"
@@ -20,10 +22,11 @@ namespace Renderer
 		void Draw(common::RenderData* data, math::Matrix4x4 worldMatrix) override;
 
 	private:
-		void DrawMesh(common::Mesh* mesh,std::vector<common::Material*>* materials,const math::Matrix4x4& worldMatrix);
+		void DrawMesh(common::Mesh* mesh, common::Material* material,const math::Matrix4x4& worldMatrix);
 	private:
 		common::IWideWindow* window_;
 		WideSwapChain* swapchain_;
+		
 	};
 
 	extern "C"

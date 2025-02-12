@@ -10,10 +10,10 @@ namespace common
 	public:
 		Mesh(const std::vector<Vertex>&, const std::vector<int>&);
 		std::vector<Vertex> GetVertices();
-		std::vector<int> GetIndices();
+		std::vector<size_t> GetIndices();
 		
 	private:
 		std::vector<Vertex> vertices_;
-		std::vector<int> indices_;
+		std::vector<size_t> indices_;
 	};
 }

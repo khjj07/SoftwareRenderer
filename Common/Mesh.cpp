@@ -13,7 +13,7 @@ std::vector<common::Vertex> common::Mesh::GetVertices()
 	return vertices_;
 }
 
-std::vector<int> common::Mesh::GetIndices()
+std::vector<size_t> common::Mesh::GetIndices()
 {
 	return indices_;
 }
